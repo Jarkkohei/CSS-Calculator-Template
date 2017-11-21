@@ -1,0 +1,74 @@
+.calculator {
+    max-width: 200px;
+    /*margin: auto;*/
+}
+
+.grid-wrapper {
+    display: grid;
+    background-color: lightgray;
+    grid-gap: 5px;
+    grid-template-areas:
+        'bezel bezel bezel bezel bezel';
+
+    padding: 10px;
+    box-shadow: 5px 5px 5px black;
+    /*box-shadow: 2px 3px 3px rgba(0, 0, 0, 0, 356);*/
+    border-radius: 10px;
+}
+
+/* Common features */
+.number, .operator, .warning, .screen, .bezel {
+  border-radius: 5px;
+}
+
+.bezel {
+    grid-area: bezel;
+    padding: 5px;
+    background-color: black;
+}
+
+.screen {
+    color: #152029;
+    text-align: right;
+    padding: 5px;
+    margin: 5px;
+    background-color: #d7dadb;
+    font-size: 200%;
+}
+
+.operator, .number, .warning {
+  box-shadow: 2px 2px 2px black;
+}
+
+.number {
+    text-align: center;
+    background-color: #8d8d8d;
+    color: white;
+}
+
+.number:hover {
+    background-color: yellow;
+    color: black;
+}
+
+.operator {
+    text-align: center;
+    background-color: #4d4d4d;
+    color: white;
+}
+
+.operator:hover {
+    background-color: blue;
+    color: white;
+}
+
+.warning {
+  text-align: center;
+  background-color: rgb(255, 102, 0);
+  color: white;
+}
+
+.warning:hover {
+  background-color: red;
+  color: white;
+}
